@@ -1,0 +1,75 @@
+// LOCALHOST DOGS
+### Get all dogs
+GET http://localhost:3000/dogs
+
+
+### Get dog by id
+GET http://localhost:3000/dogs/6512173737c8486d3615bf87
+
+
+### Create dog
+POST http://localhost:3000/dogs HTTP/1.1
+content-type: application/json
+
+{
+    "breed": "german shepherd",
+    "group": "herding",
+    "height": "22-26 inches",
+    "weight": "50-90 pounds",
+    "lifeExpectancy": "7-10 years",
+    "shedLevel": "4/5",
+    "coatLength": "medium",
+    "goodBoyLevel": "5/5"
+}
+
+### PUT dog
+PUT http://localhost:3000/dogs/6512173737c8486d3615bf87 HTTP/1.1
+content-type: application/json
+
+{
+  "_id": "6512173737c8486d3615bf87",
+  "breed": "golden retriever",
+  "group": "sporting",
+  "height": "21.5-24 inches",
+  "weight": "55-65 pounds",
+  "lifeExpectancy": "10-12 years",
+  "shedLevel": "4/5",
+  "coatLength": "medium",
+  "goodBoyLevel": "5/5"
+}
+
+### DELETE dog
+DELETE http://localhost:3000/dogs/6512173737c8486d3615bf87 HTTP/1.1
+
+// LOCALHOST Springs
+### Get all springs
+GET http://localhost:3000/springs
+
+
+### Get spring by id
+GET http://localhost:3000/springs/65121ed837c8486d3615bf8c
+
+
+### Create spring
+POST http://localhost:3000/springs HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Edward Ball Wakulla Springs State Park",
+    "fees": "$6/vehicle",
+    "county": "Wakulla"
+}
+
+### PUT spring
+PUT http://localhost:3000/springs/65121ed837c8486d3615bf8c HTTP/1.1
+content-type: application/json
+
+{
+  "_id": "65121ed837c8486d3615bf8c",
+  "name": "Blue Spring State Park",
+  "fees": "$6/vehicle",
+  "county": "Volusia"
+}
+
+### DELETE spring
+DELETE http://localhost:3000/springs/65121ed837c8486d3615bf8c HTTP/1.1
