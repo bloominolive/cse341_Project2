@@ -65,7 +65,6 @@ PUT http://localhost:3000/springs/65121ed837c8486d3615bf8c HTTP/1.1
 content-type: application/json
 
 {
-  "_id": "65121ed837c8486d3615bf8c",
   "name": "Blue Spring State Park",
   "fees": "$6/vehicle",
   "county": "Volusia"
