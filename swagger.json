@@ -5,10 +5,11 @@
     "description": "Project2 Api",
     "version": "1.0.0"
   },
-  "host": "project2-lye1.onrender.com",
+  "host": "localhost:3000",
   "basePath": "/",
   "schemes": [
-    "https"
+    "https",
+    "http"
   ],
   "paths": {
     "/": {
